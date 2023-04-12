@@ -13,22 +13,22 @@
     "endpoints": {
         "schemas": [
             {
-                "reference": "https://vng.opencatalogi.nl/schemas/communicatiekanaal.schema.json",
+                "reference": "https://vng.opencatalogi.nl/schemas/referentielijsten.communicatiekanaal.schema.json",
                 "path": "communicatiekanalen",
                 "methods": ["GET"]
             },
             {
-                "reference": "https://vng.opencatalogi.nl/schemas/procestype.schema.json",
+                "reference": "https://vng.opencatalogi.nl/schemas/referentielijsten.procestype.schema.json",
                 "path": "procestypen",
                 "methods": ["GET"]
             },
             {
-                "reference": "https://vng.opencatalogi.nl/schemas/resultaattypeomschrijvinggeneriek.schema.json",
+                "reference": "https://vng.opencatalogi.nl/schemas/referentielijsten.resultaattypeomschrijvinggeneriek.schema.json",
                 "path": "resultaattypeomschrijvingen",
                 "methods": ["GET"]
             },
             {
-                "reference": "https://vng.opencatalogi.nl/schemas/resultaat.schema.json",
+                "reference": "https://vng.opencatalogi.nl/schemas/referentielijsten.resultaat.schema.json",
                 "path": "resultaten",
                 "methods": ["GET"]
             }

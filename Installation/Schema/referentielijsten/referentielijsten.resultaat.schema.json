@@ -60,7 +60,11 @@
     "waardering": {
       "allOf": [
         {
-          "$ref": "#/components/schemas/WaarderingEnum"
+            "enum": [
+              "blijvend_bewaren",
+              "vernietigen"
+            ],
+            "type": "string"
         }
       ],
       "title": "waardering"
@@ -70,10 +74,20 @@
       "title": "procestermijn",
       "oneOf": [
         {
-          "$ref": "#/components/schemas/ProcestermijnEnum"
+            "enum": [
+              "nihil",
+              "bestaansduur_procesobject",
+              "ingeschatte_bestaansduur_procesobject",
+              "vast_te_leggen_datum",
+              "samengevoegd_met_bewaartermijn"
+            ],
+            "type": "string"
         },
         {
-          "$ref": "#/components/schemas/BlankEnum"
+            "enum": [
+              ""
+            ],
+            "type": "string"
         }
       ]
     },
