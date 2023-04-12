@@ -1,5 +1,5 @@
 {
-  "$id": "https://vng.opencatalogi.nl/schemas/procestype.schema.json",
+  "$id": "https://vng.opencatalogi.nl/schemas/referentielijsten.procestype.schema.json",
   "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
   "version": "0.1",
   "title": "ProcesType",

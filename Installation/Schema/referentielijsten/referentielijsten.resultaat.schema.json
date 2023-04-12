@@ -1,5 +1,5 @@
 {
-  "$id": "https://vng.opencatalogi.nl/schemas/resultaat.schema.json",
+  "$id": "https://vng.opencatalogi.nl/schemas/referentielijsten.resultaat.schema.json",
   "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
   "version": "0.1",
   "title": "Resultaat",

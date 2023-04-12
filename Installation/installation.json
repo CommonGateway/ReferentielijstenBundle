@@ -7,7 +7,7 @@
     "collections": [
         {
             "reference": "https://vng.opencatalogi.nl/collection/referentielijsten.default.collection.json",
-            "schemaPrefix": "referentielijsten/v1"
+            "schemaPrefix": "https://vng.opencatalogi.nl/schemas/referentielijsten"
         }
     ],
     "endpoints": {

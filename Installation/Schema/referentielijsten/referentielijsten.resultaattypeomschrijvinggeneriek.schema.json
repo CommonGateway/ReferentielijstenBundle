@@ -1,5 +1,5 @@
 {
-  "$id": "https://vng.opencatalogi.nl/schemas/resultaattypeomschrijvinggeneriek.schema.json",
+  "$id": "https://vng.opencatalogi.nl/schemas/referentielijsten.resultaattypeomschrijvinggeneriek.schema.json",
   "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
   "version": "0.1",
   "title": "ResultaattypeOmschrijvingGeneriek",

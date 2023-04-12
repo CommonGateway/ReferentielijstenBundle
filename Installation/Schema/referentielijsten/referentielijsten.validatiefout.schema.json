@@ -1,5 +1,5 @@
 {
-  "$id": "https://vng.opencatalogi.nl/schemas/validatiefout.schema.json",
+  "$id": "https://vng.opencatalogi.nl/schemas/referentielijsten.validatiefout.schema.json",
   "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
   "version": "0.1",
   "title": "ValidatieFout",
