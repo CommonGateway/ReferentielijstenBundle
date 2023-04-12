@@ -1,0 +1,32 @@
+{
+  "$id": "https://vng.opencatalogi.nl/schemas/communicatiekanaal.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "CommunicatieKanaal",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "readOnly": true,
+      "title": "url"
+    },
+    "naam": {
+      "type": "string",
+      "description": "De gangbare naam van het communicatiekanaal.",
+      "title": "naam",
+      "maxLength": 20
+    },
+    "omschrijving": {
+      "type": "string",
+      "description": "Toelichtende beschrijving van (de naam van) het communicatiekanaal.",
+      "title": "omschrijving",
+      "maxLength": 200
+    }
+  },
+  "required": [
+    "naam",
+    "omschrijving",
+    "url"
+  ]
+}

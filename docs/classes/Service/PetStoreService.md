@@ -1,13 +1,13 @@
-# CommonGateway\PetStoreBundle\Service\PetStoreService
+# CommonGateway\ReferentielijstenBundle\Service\ReferentielijstenService
 
 ## Methods
 
 | Name | Description |
 |------|-------------|
-|[\_\_construct](#petstoreservice__construct)||
-|[petStoreHandler](#petstoreservicepetstorehandler)|An example handler that is triggered by an action.|
+|[\_\_construct](#referentielijstenservice__construct)||
+|[referentielijstenHandler](#referentielijstenservicereferentielijstenhandler)|An example handler that is triggered by an action.|
 
-### PetStoreService::\_\_construct
+### ReferentielijstenService::\_\_construct
 
 **Description**
 
@@ -25,12 +25,12 @@
 
 <hr />
 
-### PetStoreService::petStoreHandler
+### ReferentielijstenService::referentielijstenHandler
 
 **Description**
 
 ```php
-public petStoreHandler (array $data, array $configuration)
+public referentielijstenHandler (array $data, array $configuration)
 ```
 
 An example handler that is triggered by an action.

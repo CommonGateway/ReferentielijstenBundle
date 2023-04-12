@@ -1,4 +1,4 @@
-# CommonGateway\PetStoreBundle
+# CommonGateway\ReferentielijstenBundle
 
 *   [Service\InstallationService](Service/InstallationService.md)
-*   [Service\PetStoreService](Service/PetStoreService.md)
+*   [Service\ReferentielijstenService](Service/ReferentielijstenService.md)

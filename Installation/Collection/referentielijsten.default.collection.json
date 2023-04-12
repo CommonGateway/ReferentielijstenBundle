@@ -1,0 +1,8 @@
+{
+    "title": "Referentielijsten Collection",
+    "$id": "https://vng.opencatalogi.nl/collection/referentielijsten.default.collection.json",
+    "$schema": "https://docs.commongateway.nl/schemas/CollectionEntity.schema.json",
+    "version": "0.0.1",
+    "prefix": "referentielijsten/v1",
+    "plugin": "ReferentielijstenBundle"
+}

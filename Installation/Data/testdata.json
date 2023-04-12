@@ -1,0 +1,61 @@
+{
+    "https://vng.opencatalogi.nl/schemas/communicatiekanaal.schema.json": [
+        {
+            "url": "http://example.com",
+            "naam": "string",
+            "omschrijving": "string"
+        }
+    ],
+    "https://vng.opencatalogi.nl/schemas/procestype.schema.json": [
+        {
+            "url": "http://example.com",
+            "nummer": -2147483648,
+            "jaar": -2147483648,
+            "naam": "string",
+            "omschrijving": "string",
+            "toelichting": "string",
+            "procesobject": "string"
+        }
+    ],
+    "https://vng.opencatalogi.nl/schemas/resultaattypeomschrijvinggeneriek.schema.json": [
+        {
+            "url": "http://example.com",
+            "omschrijving": "string",
+            "definitie": "string",
+            "opmerking": "string"
+        }
+    ],
+    "https://vng.opencatalogi.nl/schemas/resultaat.schema.json": [
+        {
+            "url": "http://example.com",
+            "procesType": "http://example.com",
+            "nummer": -2147483648,
+            "volledigNummer": "string",
+            "generiek": true,
+            "specifiek": true,
+            "naam": "string",
+            "omschrijving": "string",
+            "herkomst": "string",
+            "waardering": "blijvend_bewaren",
+            "procestermijn": "nihil",
+            "procestermijnWeergave": "string",
+            "bewaartermijn": "string",
+            "toelichting": "string",
+            "algemeenBestuurEnInrichtingOrganisatie": true,
+            "bedrijfsvoeringEnPersoneel": true,
+            "publiekeInformatieEnRegistratie": true,
+            "burgerzaken": true,
+            "veiligheid": true,
+            "verkeerEnVervoer": true,
+            "economie": true,
+            "onderwijs": true,
+            "sportCultuurEnRecreatie": true,
+            "sociaalDomein": true,
+            "volksgezonheidEnMilieu": true,
+            "vhrosv": true,
+            "heffenBelastingen": true,
+            "alleTaakgebieden": true,
+            "procestermijnOpmerking": "string"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+  "$id": "https://vng.opencatalogi.nl/schemas/procestype.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "ProcesType",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "readOnly": true,
+      "title": "url"
+    },
+    "nummer": {
+      "type": "integer",
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "title": "Procestypenummer",
+      "description": "Nummer van de selectielijstcategorie"
+    },
+    "jaar": {
+      "type": "integer",
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "description": "Het jaartal waartoe dit ProcesType behoort",
+      "title": "jaar"
+    },
+    "naam": {
+      "type": "string",
+      "title": "Procestypenaam",
+      "description": "Benaming van het procestype",
+      "maxLength": 100
+    },
+    "omschrijving": {
+      "type": "string",
+      "title": "Procestypeomschrijving",
+      "description": "Omschrijving van het procestype",
+      "maxLength": 300
+    },
+    "toelichting": {
+      "type": "string",
+      "title": "Procestypetoelichting",
+      "description": "Toelichting van het procestype"
+    },
+    "procesobject": {
+      "type": "string",
+      "description": "Object waar de uitvoering van het proces op van toepassing is en waarvan de bestaans- of geldigheidsduur eventueel van belang is bij het bepalen van de start van de bewaartermijn",
+      "title": "procesobject",
+      "maxLength": 80
+    }
+  },
+  "required": [
+    "jaar",
+    "naam",
+    "nummer",
+    "omschrijving",
+    "procesobject",
+    "toelichting",
+    "url"
+  ]
+}

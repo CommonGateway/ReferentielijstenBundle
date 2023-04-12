@@ -1,0 +1,38 @@
+{
+  "$id": "https://vng.opencatalogi.nl/schemas/resultaattypeomschrijvinggeneriek.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "ResultaattypeOmschrijvingGeneriek",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "readOnly": true,
+      "title": "url"
+    },
+    "omschrijving": {
+      "type": "string",
+      "description": "Algemeen gehanteerde omschrijvingen van de aard van het resultaat van zaken",
+      "title": "omschrijving",
+      "maxLength": 20
+    },
+    "definitie": {
+      "type": "string",
+      "description": "Nauwkeurige beschrijving van het generieke type resultaat.",
+      "title": "definitie",
+      "maxLength": 255
+    },
+    "opmerking": {
+      "type": "string",
+      "description": "Zinvolle toelichting bij de waarde van de generieke omschrijving van het resultaat.",
+      "title": "opmerking",
+      "maxLength": 255
+    }
+  },
+  "required": [
+    "definitie",
+    "omschrijving",
+    "url"
+  ]
+}

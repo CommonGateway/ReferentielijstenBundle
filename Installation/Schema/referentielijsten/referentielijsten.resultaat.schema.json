@@ -1,0 +1,169 @@
+{
+  "$id": "https://vng.opencatalogi.nl/schemas/resultaat.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "Resultaat",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "readOnly": true,
+      "title": "url"
+    },
+    "procesType": {
+      "type": "string",
+      "format": "uri",
+      "readOnly": true,
+      "title": "procestype"
+    },
+    "nummer": {
+      "type": "integer",
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "description": "Nummer van het resultaat. Dit wordt samengesteld met het procestype en generiek resultaat indien van toepassing.",
+      "title": "nummer"
+    },
+    "volledigNummer": {
+      "type": "string",
+      "readOnly": true,
+      "title": "volledigNummer"
+    },
+    "generiek": {
+      "type": "boolean",
+      "readOnly": true,
+      "title": "generiek"
+    },
+    "specifiek": {
+      "type": "boolean",
+      "readOnly": true,
+      "title": "specifiek"
+    },
+    "naam": {
+      "type": "string",
+      "description": "Benaming van het procestype",
+      "title": "naam",
+      "maxLength": 40
+    },
+    "omschrijving": {
+      "type": "string",
+      "description": "Omschrijving van het specifieke resultaat",
+      "title": "omschrijving",
+      "maxLength": 150
+    },
+    "herkomst": {
+      "type": "string",
+      "description": "Voorbeeld: 'Risicoanalyse', 'Systeemanalyse' of verwijzing naar Wet- en regelgeving",
+      "title": "herkomst",
+      "maxLength": 200
+    },
+    "waardering": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WaarderingEnum"
+        }
+      ],
+      "title": "waardering"
+    },
+    "procestermijn": {
+      "description": "Uitleg bij mogelijke waarden:\n\n* `nihil` - Nihil\n* `bestaansduur_procesobject` - De bestaans- of geldigheidsduur van het procesobject.\n* `ingeschatte_bestaansduur_procesobject` - De ingeschatte maximale bestaans- of geldigheidsduur van het procesobject.\n* `vast_te_leggen_datum` - De tijdens het proces vast te leggen datum waarop de geldigheid van het procesobject komt te vervallen. \n* `samengevoegd_met_bewaartermijn` - De procestermijn is samengevoegd met de bewaartermijn.",
+      "title": "procestermijn",
+      "oneOf": [
+        {
+          "$ref": "#/components/schemas/ProcestermijnEnum"
+        },
+        {
+          "$ref": "#/components/schemas/BlankEnum"
+        }
+      ]
+    },
+    "procestermijnWeergave": {
+      "type": "string",
+      "readOnly": true,
+      "title": "procestermijnWeergave"
+    },
+    "bewaartermijn": {
+      "type": "string",
+      "nullable": true,
+      "title": "bewaartermijn"
+    },
+    "toelichting": {
+      "type": "string",
+      "title": "toelichting"
+    },
+    "algemeenBestuurEnInrichtingOrganisatie": {
+      "type": "boolean",
+      "title": "algemeen bestuur en inrichting organisatie"
+    },
+    "bedrijfsvoeringEnPersoneel": {
+      "type": "boolean",
+      "title": "bedrijfsvoering en personeel"
+    },
+    "publiekeInformatieEnRegistratie": {
+      "type": "boolean",
+      "title": "publieke informatie en registratie"
+    },
+    "burgerzaken": {
+      "type": "boolean",
+      "title": "burgerzaken"
+    },
+    "veiligheid": {
+      "type": "boolean",
+      "title": "veiligheid"
+    },
+    "verkeerEnVervoer": {
+      "type": "boolean",
+      "title": "verkeer en vervoer"
+    },
+    "economie": {
+      "type": "boolean",
+      "title": "economie"
+    },
+    "onderwijs": {
+      "type": "boolean",
+      "title": "onderwijs"
+    },
+    "sportCultuurEnRecreatie": {
+      "type": "boolean",
+      "title": "Sport, cultuur en recreatie"
+    },
+    "sociaalDomein": {
+      "type": "boolean",
+      "title": "sociaal domein"
+    },
+    "volksgezonheidEnMilieu": {
+      "type": "boolean",
+      "title": "volksgezonheid en milieu"
+    },
+    "vhrosv": {
+      "type": "boolean",
+      "title": "VHROSV"
+    },
+    "heffenBelastingen": {
+      "type": "boolean",
+      "title": "Heffen belastingen etc."
+    },
+    "alleTaakgebieden": {
+      "type": "boolean",
+      "title": "alle taakgebieden"
+    },
+    "procestermijnOpmerking": {
+      "type": "string",
+      "description": "Voorbeeld: '25 jaar', '30 jaar, '5 of 10 jaar'",
+      "title": "procestermijn opmerking",
+      "maxLength": 20
+    }
+  },
+  "required": [
+    "generiek",
+    "herkomst",
+    "naam",
+    "nummer",
+    "procesType",
+    "procestermijnWeergave",
+    "specifiek",
+    "url",
+    "volledigNummer",
+    "waardering"
+  ]
+}
