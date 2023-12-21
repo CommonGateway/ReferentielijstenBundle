@@ -18,23 +18,25 @@ softwareType: softwareAddon
 description:
   en:
     localisedName: null
-    genericName: This repository is a PHP Symfony flex bundles for ZGW Referentielijsten.
-    shortDescription: ReferentielijstenBundle
-    longDescription: This repository is a PHP Symfony flex bundles for ZGW Referentielijsten.
+    genericName: null
+    shortDescription: "This repository is a PHP Symfony flex bundles for ZGW Referentielijsten."
+    longDescription: "This repository is a PHP Symfony flex bundles for ZGW Referentielijsten."
     documentation: null
     apiDocumentation: null
-    features: []
+    features:
+      - Common Ground Gateway Plugin
     screenshots: []
     videos: []
     awards: []
   nl:
     localisedName: null
-    genericName: Symfony bundle voor ZGW Referentielijsten.
-    shortDescription: ReferentielijstenBundle
-    longDescription: Symfony bundle voor ZGW Referentielijsten.
+    genericName: null
+    shortDescription: "Symfony bundle voor ZGW Referentielijsten."
+    longDescription: "Symfony bundle voor ZGW Referentielijsten."
     documentation: null
     apiDocumentation: null
-    features: []
+    features:
+      - Common Ground Gateway Plugin
     screenshots: []
     videos: []
     awards: []
