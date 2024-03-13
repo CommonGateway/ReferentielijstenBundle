@@ -22,7 +22,7 @@ class InstallationService implements InstallerInterface
      * @var EntityManagerInterface
      */
     private EntityManagerInterface $entityManager;
-    
+
     /**
      * The installation logger.
      *
@@ -34,15 +34,15 @@ class InstallationService implements InstallerInterface
     /**
      * The constructor
      *
-     * @param EntityManagerInterface $entityManager The entity manager.
-     * @param LoggerInterface $installationLogger The installation logger.
+     * @param EntityManagerInterface $entityManager      The entity manager.
+     * @param LoggerInterface        $installationLogger The installation logger.
      */
     public function __construct(
         EntityManagerInterface $entityManager,
         LoggerInterface $installationLogger
     ) {
         $this->entityManager = $entityManager;
-        $this->logger = $installationLogger;
+        $this->logger        = $installationLogger;
 
     }//end __construct()
 
@@ -55,7 +55,7 @@ class InstallationService implements InstallerInterface
     public function install()
     {
         $this->logger->debug("ReferentielijstenBundle -> Install()");
-        
+
         $this->checkDataConsistency();
 
     }//end install()
@@ -69,7 +69,7 @@ class InstallationService implements InstallerInterface
     public function update()
     {
         $this->logger->debug("ReferentielijstenBundle -> Update()");
-        
+
         $this->checkDataConsistency();
 
     }//end update()
@@ -83,8 +83,9 @@ class InstallationService implements InstallerInterface
     public function uninstall()
     {
         $this->logger->debug("ReferentielijstenBundle -> Uninstall()");
-        
+
         // Do some cleanup to uninstall correctly...
+
     }//end uninstall()
 
 
@@ -97,7 +98,6 @@ class InstallationService implements InstallerInterface
     {
         // This is the place where you can add or change Installation data from/for this bundle or other required bundles.
         // Note that in most cases it is recommended to use .json files in the Installation folder instead, if possible.
-        
         $this->entityManager->flush();
 
     }//end checkDataConsistency()
